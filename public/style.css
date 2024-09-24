@@ -1,0 +1,22 @@
+
+
+#container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#eggAvatar {
+    width: 150px;
+    cursor: pointer;
+}
+
+#adviceBox {
+    margin-top: 20px;
+    font-size: 60px;
+    font-weight: bold;
+    color:blueviolet;
+}
+
+#userQuestion {
+    width: 202px;
+}

@@ -1,0 +1,18 @@
+{
+  "name": "egg-bot-ai",
+  "version": "3.3.0",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mr Snacks",
+  "license": "ISC",
+  "description": "The Almighty EggBot!",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  }
+}
