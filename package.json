@@ -3,15 +3,20 @@
   "version": "3.3.0",
   "main": "api/getAdvice.js",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node api/getAdvice.js"
   },
   "keywords": [],
   "author": "Mr Snacks",
   "license": "ISC",
   "description": "The Almighty EggBot!",
   "dependencies": {
-    "axios": "^1.7.7",
+    "axios": "^1.6.0",
     "dotenv": "^16.4.5",
     "express": "^4.21.0"
-  }
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "type": "commonjs"
+  
 }
