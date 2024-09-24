@@ -9,14 +9,11 @@
   "author": "Mr Snacks",
   "license": "ISC",
   "description": "The Almighty EggBot!",
-  "dependencies": {
-    "axios": "^1.6.0",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0"
-  },
   "engines": {
     "node": "20.x"
   },
-  "type": "commonjs"
-  
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
 }
