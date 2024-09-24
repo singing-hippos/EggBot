@@ -16,9 +16,9 @@ export default async function handler(req, res) {
             }
         });
 
-        res.json({ advice: response.data.choices[0].message.content.trim() });
+        res.status(200).json({ advice: response.data.choices[0].message.content.trim() });
     } catch (error) {
-        console.error("Error calling OpenAI API from getAdvice.js", error);
+        console.error("Error calling OpenAI API from getAdvice.js", error.response?.data || error.message);
         res.status(500).json({ advice: "EggBot is scrambled... :( Try again later. [[backend error catch]]" });
     }
 }
