@@ -1,5 +1,5 @@
 document.getElementById('eggAvatar').addEventListener('click', function() {
-    fetch('./getAdvice')
+    fetch('/api/getAdvice')
         .then(response => response.json())
         .then(data => {
             document.getElementById('adviceBox').style.fontSize ='20px'
@@ -21,7 +21,7 @@ document.getElementById('askButton').addEventListener('click', function(){
         //ensuring GPT response wont' be too wordy for my token limit....
         userQuestion = `${userQuestion}. curt response under 60 words`
         
-        fetch(`/getAdvice?question=${encodeURIComponent(userQuestion)}`)
+        fetch(`/api/getAdvice?question=${encodeURIComponent(userQuestion)}`)
             .then(response => response.json())
             .then(data => {
                 document.getElementById('adviceBox').style.fontSize ='20px';
@@ -36,7 +36,7 @@ document.getElementById('askButton').addEventListener('click', function(){
     else {
         //possibly my favorite piece of code I've ever written lol....
         userQuestion = "please talk to me as if I am an ungrateful servent who is hungover and pitiful, and you are the allmighty Egg God who needs to educate me on the ways of the universe and my own existence, but you are impatient and curt and limited to 50 words. mention the egg god"
-        fetch(`/getAdvice?question=${encodeURIComponent(userQuestion)}`)
+        fetch(`/api/getAdvice?question=${encodeURIComponent(userQuestion)}`)
             .then(response => response.json())
             .then(data => {
                 document.getElementById('adviceBox').style.fontSize ='20px'
