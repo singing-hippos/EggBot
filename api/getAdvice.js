@@ -1,4 +1,4 @@
-const axios = require('axios').default;
+import axios from 'axios';
 
 export default async function handler(req, res) {
     const userQuestion = req.query.question || "You are the all-knowing Egg God, mighty haughty and impatient. Admonish me then give me one piece of practical, eclectic, herbal, natural, or exotic hangover advice in less than 60 words"
