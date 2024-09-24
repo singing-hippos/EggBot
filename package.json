@@ -1,7 +1,7 @@
 {
   "name": "egg-bot-ai",
   "version": "3.3.0",
-  "main": "server/server.js",
+  "main": "api/getAdvice.js",
   "scripts": {
     "start": "node server/server.js"
   },
